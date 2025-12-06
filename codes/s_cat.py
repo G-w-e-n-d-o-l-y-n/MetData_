@@ -29,12 +29,12 @@ output_file = 'Base Camp.csv'
 
 if os.path.exists(output_file):
     os.remove(output_file)
-    print(f"🗑️ Removed old .csv")
+    print(f"Removed old .csv")
 
 
 # Confirm the existance of .sbd files
 
-print(f"🔍 Found {len(sbd_files)} .sbd files")
+print(f"Found {len(sbd_files)} .sbd files")
 
 all_data = []
 
@@ -63,7 +63,7 @@ for file in sbd_files:
 
         all_data.append(df)
     except Exception as e:
-        print(f"❌ Failed to read {file}: {e}")
+        print(f"Failed to read {file}: {e}")
 
 
 if all_data:
@@ -101,11 +101,12 @@ if all_data:
     # Save
 
     full_df.to_csv(output_file, index=False)
-    print(f"✅ Combined .csv with hourly timestamps written to {output_file}")
+    print(f"Combined .csv with hourly timestamps written to {output_file}")
 else:
-    print("❌ No valid .sbd files were read.")
+    print("No valid .sbd files were read.")
 
 # Trigger upload.py t_rh.py, and t_rh_10.py
+
 import subprocess
 
 subprocess.run(['python3', 't_rh.py'], check=True)

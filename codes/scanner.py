@@ -110,7 +110,7 @@ def process_emails():
 
 # === LOOP FOREVER AND EVER AMEN ===
 
-print("Email scanner started... Checking every single minute...")
+print("Email scanner started... Checking every minute...")
 while True:
     process_emails()
     print("Scanning for new data...")
