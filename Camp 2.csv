@@ -1201,3 +1201,4 @@ Time (NPT),Temperature (Celsius),Relative Humidity,col3,col4,col5,Missing
 2025-12-13 01:00:00,,,,,,True
 2025-12-13 02:00:00,,,,,,True
 2025-12-13 03:00:00,-17.85,10.76,24.68,4.945,460.3,False
+2025-12-13 04:00:00,-17.07,12.83,529.9,4.64,NAN,False
